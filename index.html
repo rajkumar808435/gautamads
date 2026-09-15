@@ -6,33 +6,15 @@
 
 <title>Trading With Karol</title>
 
-<!-- =========================
-     META PIXEL
-========================= -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
-{
-  if(f.fbq)return;
-  n=f.fbq=function(){
-    n.callMethod ?
-    n.callMethod.apply(n,arguments) :
-    n.queue.push(arguments)
-  };
-
-  if(!f._fbq)f._fbq=n;
-  n.push=n;
-  n.loaded=!0;
-  n.version='2.0';
-  n.queue=[];
-
-  t=b.createElement(e);
-  t.async=!0;
-  t.src=v;
-
-  s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s);
-}
-(window, document, 'script',
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '1353842010073774');
@@ -40,439 +22,216 @@ fbq('track', 'PageView');
 </script>
 
 <noscript>
-<img
-  height="1"
-  width="1"
-  style="display:none"
-  src="https://www.facebook.com/tr?id=1353842010073774&ev=PageView&noscript=1"
-/>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1353842010073774&ev=PageView&noscript=1"/>
 </noscript>
-<!-- END META PIXEL -->
-
+<!-- End Meta Pixel Code -->
 
 <style>
-
-/* =========================
-   RESET
-========================= */
-
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-
-/* =========================
-   PAGE
-========================= */
-
-html,
-body{
-  width:100%;
-  min-height:100%;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-  background:#160904;
-  color:#f8eee5;
-  font-family:Arial,Helvetica,sans-serif;
+    min-height:100vh;
+    font-family:Arial,sans-serif;
+    background:#21150f;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
-
-/* =========================
-   MAIN CONTAINER
-========================= */
-
-.page{
-  width:100%;
-  max-width:600px;
-  min-height:100vh;
-  margin:auto;
-  padding:14px 14px 20px;
-  text-align:center;
+.container{
+    width:100%;
+    max-width:430px;
+    text-align:center;
 }
-
-
-/* =========================
-   STATUS
-========================= */
 
 .status{
-  display:inline-block;
-  padding:7px 16px;
-  margin-bottom:12px;
-  border:1px solid #70400f;
-  border-radius:30px;
-  color:#f2b548;
-  font-size:13px;
-  font-weight:700;
+    display:inline-block;
+    background:#3a2819;
+    color:#e7b95b;
+    border:1px solid #8c672e;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:20px;
 }
 
-.status-dot{
-  display:inline-block;
-  width:8px;
-  height:8px;
-  margin-right:5px;
-  border-radius:50%;
-  background:#e9a51b;
-  box-shadow:0 0 8px #e9a51b;
+.card{
+    background:#fff;
+    color:#21150f;
+    border-radius:24px;
+    padding:25px 20px 30px;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
 }
 
-
-/* =========================
-   PROFILE PHOTO
-========================= */
-
-.photo-box{
-  width:112px;
-  height:112px;
-  margin:0 auto 9px;
-  padding:4px;
-  border-radius:50%;
-  background:linear-gradient(
-    135deg,
-    #ffbd38,
-    #d87800,
-    #ffb52d
-  );
-  box-shadow:0 0 18px rgba(232,153,22,.22);
+.profile{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #e7b95b;
+    margin-bottom:18px;
 }
 
-.profile-photo{
-  width:100%;
-  height:100%;
-  display:block;
-  border-radius:50%;
-  object-fit:cover;
-  object-position:center;
-  border:3px solid #241007;
-}
-
-
-/* =========================
-   TITLE
-========================= */
-
-.title{
-  font-size:25px;
-  line-height:1.15;
-  font-weight:900;
+h1{
+    font-size:27px;
+    margin-bottom:10px;
+    color:#21150f;
 }
 
 .subtitle{
-  margin-top:5px;
-  font-size:15px;
-  font-weight:800;
-  color:#f0aa36;
-}
-
-
-/* =========================
-   MAIN TEXT
-========================= */
-
-.main-text{
-  margin-top:13px;
-  font-size:17px;
-  line-height:1.35;
-  font-weight:800;
-}
-
-.gold{
-  color:#f1aa36;
-}
-
-.sub-text{
-  margin-top:7px;
-  color:#aaa09a;
-  font-size:13px;
-  line-height:1.35;
-}
-
-
-/* =========================
-   INFO BOX
-========================= */
-
-.info-box{
-  margin-top:12px;
-  padding:11px 13px;
-  border-radius:15px;
-  border:1px solid #75400f;
-  background:rgba(54,22,8,.5);
-  color:#eee1d8;
-  font-size:13px;
-  line-height:1.4;
-}
-
-.info-box strong{
-  color:#f1ad3b;
-}
-
-
-/* =========================
-   TELEGRAM BUTTON
-========================= */
-
-.telegram-btn{
-  width:94%;
-  min-height:53px;
-  margin:14px auto 0;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-
-  border-radius:16px;
-
-  background:linear-gradient(
-    135deg,
-    #ffb52a,
-    #df8a09
-  );
-
-  color:#170b04;
-  text-decoration:none;
-
-  font-size:17px;
-  font-weight:900;
-
-  box-shadow:
-    0 8px 20px rgba(218,137,8,.22);
-
-  cursor:pointer;
-}
-
-.telegram-btn:active{
-  transform:scale(.98);
-}
-
-.telegram-icon{
-  font-size:24px;
-}
-
-
-/* =========================
-   FREE TEXT
-========================= */
-
-.free-text{
-  margin-top:8px;
-  color:#9f948e;
-  font-size:12px;
-}
-
-
-/* =========================
-   LOWER BOX
-========================= */
-
-.lower-box{
-  margin-top:13px;
-  padding:10px;
-  border-radius:13px;
-  border:1px solid #63370f;
-  background:rgba(38,15,7,.5);
-}
-
-.lower-title{
-  font-size:14px;
-  font-weight:900;
-}
-
-.lower-text{
-  margin-top:3px;
-  color:#9e938d;
-  font-size:11px;
-  line-height:1.3;
-}
-
-
-/* =========================
-   MOBILE SMALL SCREEN
-========================= */
-
-@media(max-height:700px){
-
-  .page{
-    padding-top:9px;
-  }
-
-  .status{
-    margin-bottom:8px;
-  }
-
-  .photo-box{
-    width:95px;
-    height:95px;
-    margin-bottom:6px;
-  }
-
-  .title{
-    font-size:22px;
-  }
-
-  .subtitle{
+    color:#85652e;
     font-size:14px;
-  }
-
-  .main-text{
-    margin-top:9px;
-    font-size:15px;
-  }
-
-  .sub-text{
-    margin-top:5px;
-    font-size:12px;
-  }
-
-  .info-box{
-    margin-top:9px;
-    padding:8px 10px;
-    font-size:12px;
-  }
-
-  .telegram-btn{
-    margin-top:10px;
-    min-height:48px;
-    font-size:16px;
-  }
-
-  .lower-box{
-    margin-top:9px;
-  }
-
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:20px;
 }
 
+.description{
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+.info{
+    background:#f7f1e5;
+    border-left:4px solid #d7a746;
+    padding:14px;
+    border-radius:10px;
+    text-align:left;
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:22px;
+}
+
+.join-btn{
+    display:block;
+    width:100%;
+    background:#d9aa4b;
+    color:#21150f;
+    text-decoration:none;
+    padding:16px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,.18);
+}
+
+.join-btn:active{
+    transform:scale(.98);
+}
+
+.footer{
+    margin-top:15px;
+    font-size:12px;
+    color:#777;
+}
+
+.bottom{
+    margin-top:18px;
+    background:#3a2819;
+    border:1px solid #6e5128;
+    border-radius:15px;
+    padding:15px;
+    color:#e7b95b;
+    font-weight:bold;
+    font-size:14px;
+}
+
+@media(max-width:380px){
+    h1{
+        font-size:24px;
+    }
+
+    .card{
+        padding:22px 16px 26px;
+    }
+}
 </style>
 </head>
 
-
 <body>
 
-<div class="page">
+<div class="container">
 
-
-  <!-- STATUS -->
-
-  <div class="status">
-    <span class="status-dot"></span>
-    Live market updates running now
-  </div>
-
-
-  <!-- PROFILE PHOTO -->
-
-  <div class="photo-box">
-
-    <img
-      src="profile.jpg"
-      class="profile-photo"
-      alt="Trading With Karol"
-    >
-
-  </div>
-
-
-  <!-- TITLE -->
-
-  <h1 class="title">
-    👑 TRADING WITH KAROL 👑
-  </h1>
-
-
-  <div class="subtitle">
-    NIFTY · BANKNIFTY · SENSEX
-  </div>
-
-
-  <!-- MAIN TEXT -->
-
-  <div class="main-text">
-
-    Ek chart level jo
-    <span class="gold">aaj hi trigger</span>
-    hone wala hai — pehle wahi log jaante hain
-    jo channel mein hain.
-
-  </div>
-
-
-  <!-- SUB TEXT -->
-
-  <div class="sub-text">
-
-    Clear entry-exit levels, roz ka market breakdown,
-    bina kisi paid tips ke.
-
-  </div>
-
-
-  <!-- INFO BOX -->
-
-  <div class="info-box">
-
-    Aaj ka
-    <strong>NIFTY key level</strong>
-    aur
-    <strong>BankNifty setup</strong>
-    channel mein already share ho chuka hai.
-    Market khulne se pehle dekh lo.
-
-  </div>
-
-
-  <!-- =========================
-       TELEGRAM BUTTON
-
-       Telegram click ko custom
-       event ke roop mein track karega.
-       Ye actual Telegram request
-       ko confirm nahi karta.
-  ========================= -->
-
-  <a
-    href="https://t.me/+RS5o3-2SbuAwNDdl"
-    class="telegram-btn"
-    target="_blank"
-    rel="noopener noreferrer"
-    onclick="fbq('trackCustom', 'TelegramClick');"
-  >
-
-    <span class="telegram-icon">
-      ➤
-    </span>
-
-    Join Free Telegram Channel
-
-  </a>
-
-
-  <!-- FREE TEXT -->
-
-  <div class="free-text">
-    100% Free • No Spam • Cancel Anytime
-  </div>
-
-
-  <!-- LOWER BOX -->
-
-  <div class="lower-box">
-
-    <div class="lower-title">
-      📈 Daily Market Updates
+    <div class="status">
+        ● Live market updates running now
     </div>
 
-    <div class="lower-text">
-      Market insights, educational content and regular updates.
+    <div class="card">
+
+        <img src="profile.jpg"
+             class="profile"
+             alt="Trading With Karol">
+
+        <h1>👑 TRADING WITH KAROL 👑</h1>
+
+        <div class="subtitle">
+            NIFTY · BANKNIFTY · SENSEX
+        </div>
+
+        <div class="description">
+            Today’s important chart levels are triggering.
+            Get market updates, key levels and trading setups directly on Telegram.
+        </div>
+
+        <div class="info">
+            📊 <b>NIFTY Key Level:</b>
+            Important levels and market direction updates.
+            <br><br>
+            ⚡ <b>BankNifty Setup:</b>
+            Intraday levels and important market updates.
+        </div>
+
+        <!-- Telegram Button -->
+        <a
+            href="https://t.me/+RS5o3-2SbuAwNDdl"
+            class="join-btn"
+            id="telegramJoinButton"
+        >
+            🚀 Join Free Telegram Channel
+        </a>
+
+        <div class="footer">
+            100% Free • No Spam • Cancel Anytime
+        </div>
+
     </div>
 
-  </div>
-
+    <div class="bottom">
+        📈 Daily Market Updates
+    </div>
 
 </div>
+
+
+<script>
+document.getElementById("telegramJoinButton").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    var telegramURL = this.href;
+
+    /* Meta Subscribe event */
+    if (typeof fbq === "function") {
+        fbq('track', 'Subscribe');
+    }
+
+    /* Pixel ko event bhejne ka short time */
+    setTimeout(function(){
+        window.location.href = telegramURL;
+    }, 700);
+
+});
+</script>
 
 </body>
 </html>
